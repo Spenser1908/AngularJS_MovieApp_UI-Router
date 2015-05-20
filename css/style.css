@@ -1,0 +1,171 @@
+/* style.css */
+/* BASIC STYLING
+============================================================================= */
+body                           { padding-top:20px; }
+
+/* form styling */
+#form-container                { background:#2f2f2f; margin-bottom:20px; border-radius:5px; }
+
+#form-container .page-header   { background:#151515; margin:0; padding:30px;
+                                 border-top-left-radius:5px; border-top-right-radius:5px; }
+
+img                            { float: left;  }
+
+#headerContainer               { height: 134px; text-align: center; position:relative; }
+
+#subContainer                  { position:absolute; top:50%; height:10em; margin-top:-5em }
+
+.headerText                    { position: relative; height: 14rem; }
+
+.v-align                       { position: absolute; top: 50%; transform: translateY(-50%); }
+
+.table a:not(.btn)             { text-decoration: none; }
+
+/* BUTTONS
+============================================================================= */
+.buttonPadding                 { padding-bottom: 5px; }
+
+.btn-customSmall               { padding: 4px 2px; font-size: 11px; line-height: 1.5; border-radius: 3px; }
+
+/*  Looking for a Custom Button Site? Check out: http://charliepark.org/bootstrap_buttons/  */
+
+/* step1.html Page Buttons */
+.btn-orange {
+    background-color: hsl(20, 100%, 55%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe884c", endColorstr="#ff6619");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fe884c), to(#ff6619));
+    background-image: -moz-linear-gradient(top, #fe884c, #ff6619);
+    background-image: -ms-linear-gradient(top, #fe884c, #ff6619);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe884c), color-stop(100%, #ff6619));
+    background-image: -webkit-linear-gradient(top, #fe884c, #ff6619);
+    background-image: -o-linear-gradient(top, #fe884c, #ff6619);
+    background-image: linear-gradient(#fe884c, #ff6619);
+    border-color: #ff6619 #ff6619 hsl(20, 100%, 52.5%);
+    color: #ffffff !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.16);
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-orange:hover {
+    background-color: hsl(20, 100%, 47%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe6c23", endColorstr="#ef4f00");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fe6c23), to(#ef4f00));
+    background-image: -moz-linear-gradient(top, #fe6c23, #ef4f00);
+    background-image: -ms-linear-gradient(top, #fe6c23, #ef4f00);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe6c23), color-stop(100%, #ef4f00));
+    background-image: -webkit-linear-gradient(top, #fe6c23, #ef4f00);
+    background-image: -o-linear-gradient(top, #fe6c23, #ef4f00);
+    background-image: linear-gradient(#fe6c23, #ef4f00);
+    border-color: #ef4f00 #ef4f00 hsl(20, 100%, 44.5%);
+    color: #ffffff !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.16);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* step2.html: Genre Buttons */
+.btn-yellow {
+    background-color: hsl(36, 100%, 51%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc36b", endColorstr="#ff9b05");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffc36b), to(#ff9b05));
+    background-image: -moz-linear-gradient(top, #ffc36b, #ff9b05);
+    background-image: -ms-linear-gradient(top, #ffc36b, #ff9b05);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffc36b), color-stop(100%, #ff9b05));
+    background-image: -webkit-linear-gradient(top, #ffc36b, #ff9b05);
+    background-image: -o-linear-gradient(top, #ffc36b, #ff9b05);
+    background-image: linear-gradient(#ffc36b, #ff9b05);
+    border-color: #ff9b05 #ff9b05 hsl(36, 100%, 46%);
+    color: #333 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-yellow:hover {
+    background-color: hsl(36, 100%, 61%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd89e", endColorstr="#feaf38");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffd89e), to(#feaf38));
+    background-image: -moz-linear-gradient(top, #ffd89e, #feaf38);
+    background-image: -ms-linear-gradient(top, #ffd89e, #feaf38);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd89e), color-stop(100%, #feaf38));
+    background-image: -webkit-linear-gradient(top, #ffd89e, #feaf38);
+    background-image: -o-linear-gradient(top, #ffd89e, #feaf38);
+    background-image: linear-gradient(#ffd89e, #feaf38);
+    border-color: #feaf38 #feaf38 hsl(36, 100%, 56%);
+    color: #333 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* step2.html: Rating Buttons */
+.btn-teal {
+    background-color: hsl(155, 73%, 42%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57e4a9", endColorstr="#1cb978");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#57e4a9), to(#1cb978));
+    background-image: -moz-linear-gradient(top, #57e4a9, #1cb978);
+    background-image: -ms-linear-gradient(top, #57e4a9, #1cb978);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57e4a9), color-stop(100%, #1cb978));
+    background-image: -webkit-linear-gradient(top, #57e4a9, #1cb978);
+    background-image: -o-linear-gradient(top, #57e4a9, #1cb978);
+    background-image: linear-gradient(#57e4a9, #1cb978);
+    border-color: #1cb978 #1cb978 hsl(155, 73%, 37%);
+    color: #333 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-teal:hover {
+    background-color: hsl(155, 73%, 57%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c5f6e1", endColorstr="#41e19e");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#c5f6e1), to(#41e19e));
+    background-image: -moz-linear-gradient(top, #c5f6e1, #41e19e);
+    background-image: -ms-linear-gradient(top, #c5f6e1, #41e19e);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c5f6e1), color-stop(100%, #41e19e));
+    background-image: -webkit-linear-gradient(top, #c5f6e1, #41e19e);
+    background-image: -o-linear-gradient(top, #c5f6e1, #41e19e);
+    background-image: linear-gradient(#c5f6e1, #41e19e);
+    border-color: #41e19e #41e19e hsl(155, 73%, 49.5%);
+    color: #333 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.49);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ANIMATION STYLING
+============================================================================= */
+#signup-form            { position:relative; min-height:300px; overflow:hidden; padding:30px; }
+
+#form-views             { width:auto; }
+
+#form-views.ng-enter,
+#form-views.ng-leave    { position:absolute; left:30px; right:30px;
+                          transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease; }
+
+#form-views.ng-enter     { -webkit-animation:slideInRight 0.5s both ease; -moz-animation:slideInRight 0.5s both ease;
+                            animation:slideInRight 0.5s both ease; }
+
+#form-views.ng-leave     { -webkit-animation:slideOutLeft 0.5s both ease; -moz-animation:slideOutLeft 0.5s both ease;
+                            animation:slideOutLeft 0.5s both ease; }
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+
+@keyframes slideOutLeft { to      { transform: translateX(-200%); } }
+
+@-moz-keyframes slideOutLeft { to      { -moz-transform: translateX(-200%); } }
+
+@-webkit-keyframes slideOutLeft { to      { -webkit-transform: translateX(-200%); } }
+
+/* slide in from the right */
+@keyframes slideInRight { from    { transform:translateX(200%); }
+                           to      { transform: translateX(0); }  }
+
+@-moz-keyframes slideInRight { from    { -moz-transform:translateX(200%); }
+                                to      { -moz-transform: translateX(0); }  }
+
+@-webkit-keyframes slideInRight { from    { -webkit-transform:translateX(200%); }
+                                    to      { -webkit-transform: translateX(0); }  }

@@ -1,0 +1,33 @@
+<!-- Step 2: Shows series of Genre or Rating buttons: -->
+<div class="form-group" ng-controller="formController">
+
+	<!-- ng-switch: Case Statement that switches based on the Data.sortType that is selected by User in step1.html -->
+	<div ng-switch on="Data.sortType">
+
+	<!-- ================== Genre: ================== -->
+		<div ng-switch-when="genre">
+			<label>Select a Genre</label>
+
+			<div ng-repeat="genre in genres" class="buttonPadding">
+				<a ui-sref="movieForm.step3" class="btn btn-block btn-yellow" ng-click="Data.selectedGenre = genre.genre">
+					{{genre.genre}}
+					<span class="glyphicon glyphicon-circle-arrow-right"></span>
+				</a>
+			</div>
+		</div>
+
+
+	<!-- ================== Rating: ================== -->
+		<div ng-switch-when="rating">
+			<label>Select a Rating</label>
+
+			<div ng-repeat="rating in ratings" class="buttonPadding">
+				<a ui-sref="movieForm.step3" class="btn btn-block btn-teal" ng-click="Data.selectedRating = rating.rating">
+					{{rating.rating}}
+					<span class="glyphicon glyphicon-circle-arrow-right"></span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>

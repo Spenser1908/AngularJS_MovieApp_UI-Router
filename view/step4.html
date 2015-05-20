@@ -1,0 +1,49 @@
+<!-- Step 4: Final step, let's user select theater, time, and ticket number.
+                Submit button returns a message confirming what user ordered-->
+<form>
+    <h3 class="text-warning text-center">Order Review:</h3>
+
+    <div class="col-xs-offset-2">
+
+        <div class="form-group">
+            <label class="col-sm-6">You selected a movie: </label>
+            <label>{{Data.selectedMovie}}</label>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-6">Select Movie Theater:</label>
+            <select class="btn-default" ng-model="userData.theater">
+                <option>Jordan Creek</option>
+                <option>Fridley Theater</option>
+                <option>Southridge Caremike</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-6">Select Time: </label>
+            <select class="btn-default" ng-model="userData.time">
+                <option>3:30</option>
+                <option>6:30</option>
+                <option>8:00</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-6">Ticket Qty:</label>
+            <select class="btn-default" ng-model="userData.ticket">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+        </div>
+
+    </div>
+        <br>
+        <br>
+    <button type="submit" class="btn btn-block btn-danger">Submit</button>
+</form>

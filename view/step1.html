@@ -1,0 +1,19 @@
+<!-- Step 1: Displays the various options for searching -->
+<div class="form-group">
+
+	<!-- Title Button directs user to step3.html, where titles are displayed. -->
+	<a ui-sref="movieForm.step3" ng-click="Data.sortType ='title'" class="btn btn-block btn-orange">
+	    Title <span class="glyphicon glyphicon-circle-arrow-right"></span>
+	</a>
+
+	<!-- Genre Button directs user to step2.html, where user selected desired genre. -->
+	<a ui-sref="movieForm.step2" ng-click="Data.sortType ='genre'" class="btn btn-block btn-orange">
+	    Genre <span class="glyphicon glyphicon-circle-arrow-right"></span>
+	</a>
+
+	<!-- Rating Button directs user to step2.html, where user selected desired rating. -->
+	<a ui-sref="movieForm.step2" ng-click="Data.sortType ='rating'" class="btn btn-block btn-orange">
+	    Rating <span class="glyphicon glyphicon-circle-arrow-right"></span>
+	</a>
+</div>
+

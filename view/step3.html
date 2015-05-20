@@ -1,0 +1,96 @@
+<!-- Step 3: Returns Available Movie titles -->
+<label>Available Movies:</label>
+
+<div class="form-group" ng-controller="formController">
+	<div ng-switch on="Data.sortType">
+
+<!--============================ Title ============================================ -->
+
+		<div ng-switch-when="title">
+			<table class="table table-hover table-striped">
+				<thead>
+				<tr>
+					<th>Titles:</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="movie in movies">
+					<td>
+						<a ui-sref="movieForm.step4" ng-click="Data.selectedMovie = movie.title" ng-model="Data.selectedMovie">
+							{{movie.title}}
+						</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+<!--============================ Genre ============================================ -->
+
+		<div ng-switch-when="genre">
+			<table class="table table-hover table-striped">
+				<thead>
+				<tr>
+					<th class="panel-heading">Titles:</th>
+				</tr>
+				</thead>
+				<tbody>
+				<!-- _____________________________ Note:________________________________
+				 - Created a list to store returned results: genreFilteredList = (...)
+				    Allows one to user list later: <tr ng-hide="genreFilteredList.length">
+
+				 The breakdown of: (movies | filter: { genre: Data.selectedGenre}: true)
+				 	- movies   is the array that elements are pulled from.
+				 	- filter   is Angular JS's filter
+				 	- {genre: Data.selectedGenre}  is the expression to filter on. To specify the filter field, simply put
+				                                   name of field in {...} In this example, we want to filter on genres.
+				 	- true   is the comparator. It tells filter to return on that that matches exactly.
+
+				For more information, see Angular's Documentation: https://docs.angularjs.org/api/ng/filter/filter  -->
+				<tr ng-repeat="movie in genreFilteredList = (movies | filter: { genre: Data.selectedGenre}: true)">
+					<td>
+						<a ui-sref="movieForm.step4" ng-click="Data.selectedMovie = movie.title">
+							{{movie.title}}
+						</a>
+					</td>
+				</tr>
+				<tr ng-hide="genreFilteredList.length">
+					<td>
+						<a ui-sref="movieForm.step2">No Result. Return to Options</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+<!--============================ Rating ============================================ -->
+
+		<div ng-switch-when="rating">
+
+			<table class="table table-hover table-striped">
+				<thead>
+				<tr>
+					<th class="panel-heading">Titles:</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="movie in ratingFilteredList = (movies | filter: {rating: Data.selectedRating}: true)">
+						<td>
+							<a ui-sref="movieForm.step4" ng-click="Data.selectedMovie = movie.title">
+								{{movie.title}}
+							</a>
+						</td>
+					</tr>
+					<tr ng-hide="ratingFilteredList.length">
+						<td>
+							<a ui-sref="movieForm.step2">No Result. Return to Options</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
+
