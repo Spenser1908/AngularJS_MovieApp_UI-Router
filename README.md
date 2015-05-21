@@ -16,9 +16,9 @@ In this app you’ll find examples of the following Angular features:
 
 Basic Routing Structure:
 
-index.html 	// Loads CSS and JS files
+    index.html 	// Loads CSS and JS files
 
-    movieForm.html 	// Template & Layout
+        movieForm.html 	// Template & Layout
     
 		step1.html 	   // Views (all 4 “step” files)
 		step2.html
