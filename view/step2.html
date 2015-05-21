@@ -6,7 +6,7 @@
 
 	<!-- ================== Genre: ================== -->
 		<div ng-switch-when="genre">
-			<label>Select a Genre</label>
+			<label>Select a Genre:</label>
 
 			<div ng-repeat="genre in genres" class="buttonPadding">
 				<a ui-sref="movieForm.step3" class="btn btn-block btn-yellow" ng-click="Data.selectedGenre = genre.genre">
@@ -19,7 +19,7 @@
 
 	<!-- ================== Rating: ================== -->
 		<div ng-switch-when="rating">
-			<label>Select a Rating</label>
+			<label>Select a Rating:</label>
 
 			<div ng-repeat="rating in ratings" class="buttonPadding">
 				<a ui-sref="movieForm.step3" class="btn btn-block btn-teal" ng-click="Data.selectedRating = rating.rating">
