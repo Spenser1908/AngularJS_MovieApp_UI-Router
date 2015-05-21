@@ -1,3 +1,6 @@
+<!-- movieForm.html: This loads static layout and template (i.e. Header & body container).
+                All other views are injected here on line 29: <div id="form-views" ui-view></div> -->
+
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
         <div id="form-container">
@@ -20,9 +23,10 @@
                 </div>
             </div>
 
-            <!-- use ng-submit to catch the form submission and use our Angular function -->
-            <form id="signup-form" ng-submit="processForm()">
-                <!-- our nested state views will be injected here -->
+            <!-- Use ng-submit to catch the form submission and use our Angular function.
+                 The following "ids" load animation between views                           -->
+            <form id="movie-form" ng-submit="processForm()">
+                <!-- The other views are known as "nested state views" will be injected here -->
                 <div id="form-views" ui-view></div>
             </form>
 
