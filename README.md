@@ -1,7 +1,9 @@
 # AngularJS_MovieApp_UI-Router
 Movie App built with AngularJS and styled with Bootstrap. This app uses a UI Router.
 
--------------------------  Movie App ---------------------------
+-----------------------------------------------------------------
+
+Movie App 
 
 In this app you’ll find examples of the following Angular features:
 -	ng-switch
