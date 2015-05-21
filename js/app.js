@@ -64,6 +64,7 @@ angular.module('movieApp', ['ngAnimate', 'ui.router', 'ui.bootstrap'])
 
     // Array with data:
     $scope.movies = [
+        {title:'Monkey Kingdom', genre: 'Adventure', rating: 'G'},
         {title:'Pitch Perfect 2', genre: 'Musical', rating: 'PG13'},
         {title:'Longest Ride', genre: 'Romance', rating: 'PG13'},
         {title:'Furious 7', genre: 'Action', rating: 'PG13'},
