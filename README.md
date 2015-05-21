@@ -1,5 +1,6 @@
 # AngularJS_MovieApp_UI-Router
 Movie App built with AngularJS and styled with Bootstrap. This app uses a UI Router.
+![alt tag](https://raw.githubusercontent.com/Spenser1908/AngularJS_MovieApp_UI-Router/26ccc3265080820816b1daf059943b39ed5bb1d1/README_images/step1.png)
 
 -----------------------------------------------------------------
 
